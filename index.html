@@ -4,15 +4,56 @@
         <meta charset="UTF-8">
         <!--This gives the browser instructions on how to control the page's dimensions and scaling.  -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!--With that I can link a attribute to the html-->
+        <!--Bootstrap CSS-->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+        <!--The website title-->
         <title>MOUZ</title>
     </head>
     <body>
-        <div class="container">
-            <button type="button" class="btn btn-primary">Primary</button>   
-        </div>    
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <header>
+            <!-- navbar - is used to create the navigation bar. 
+            navbar-expand-lg - is to make the navigation bar larger. 
+            navbar-dark - is to make the navigation bar dark. 
+            bg-dark - is to make the navigation bar background dark.
+            p-2 = padding,we use this to for spacing,the 2 is the padding level. 
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark p-2">
+            container-fluid - class provides a full-width container which spans the entire width of the viewport. --> 
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark p-2">
+                <!-- container-fluid - class provides a full-width container which spans the entire width of the viewport. --> 
+                <div class="container-fluid">
+                    <!-- img src - to insert the logo to the navbar.
+                    navbar-brand class is applied to typical branding logo you see in the top navigation bar.
+                    height is to give the logo the right resolution. -->
+                    <img src="./pics/channels4_profile.jpg" class="navbar-brand" alt="MOUZ" height="36">
+                    <!-- navbar-toggler - for use with our collapse plugin and other navigation toggling behaviors.
+                     data-toggle="collapse" - Using that, you can select a class or an id and hook up the element with a particular widget.
+                     data-target - we use this to target the data,what will the button do. -->
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent">
+                        <!-- <span class="navbar-toggler-icon"></span> - we use this to insert the navigation bar icon to the navbar using bootstrap -->
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <!-- navbar-collapse - we use this to collapse the navbar menu
+                        justify-content-center -we use this to align the items to the middle of the navbar. 
+                        id="navbarContent - when we click on the navbar button it will show the content. -->
+                    <div class="collapse navbar-collapse justify-content-center" id="navbarContent">
+                        <!-- navbar-nav - for a full-height and lightweight navigation (including support for dropdowns). -->
+                        <ul class="navbar-nav">
+                            <!-- nav-item - is for isert the item to the navigation bar.
+                                 nav-link - this will link you to the selected navigation item if you click on it
+                                 text-white - is for make the text white on the navigation bar -->
+                            <li class="nav-item"><a href="" class="nav-link text-white">Home</a></li>
+                            <li class="nav-item"><a href="" class="nav-link text-white">Main</a></li>
+                            <li class="nav-item"><a href="" class="nav-link text-white">About</a></li>
+                            <li class="nav-item"><a href="" class="nav-link text-white">Crosshair</a></li>
+                            <li class="nav-item"><a href="" class="nav-link text-white">Photos</a></li>
+                            <li class="nav-item"><a href="" class="nav-link text-white">Sponsors</a></li>
+                            <li class="nav-item"><a href="" class="nav-link text-white">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <!-- this links the bootstrap script to the html-->
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
     </body>
 </html>
