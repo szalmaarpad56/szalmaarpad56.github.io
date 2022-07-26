@@ -56,27 +56,50 @@
         </header>
         <!-- creates a box -->
         <section class="box"> 
-            <!-- put's a video source on to the website and scales it to 100% and stretches the video to the site with style,and the audio is disabled,the video is looped --> 
-        <!-- creates a box -->
-        <section class="box"> 
-            <!-- put's a video source on to the website and scales it to 100% and stretches the video to the site with style,and the audio is disabled,the video is looped --> 
-            <div class="position-relative"><video src="./pics/video.mp4" width="100%" height="100%"" style="object-fit: cover;" autoplay muted loop></video>
-                <div class="container sajt position-absolute top-50 start-50 translate-middle text-center text-white bg-dark bg-opacity-50">
+            <!-- position-relative - meants it's positioned relative to its normal position. --> 
+            <div class="position-relative">
+                <!-- put's a video source on to the website and scales it to 100% and stretches the video to the site with style,and the audio is disabled,the video is looped --> 
+                <video src="./pics/video.mp4" width="100%" height="100%"" style="object-fit: cover;" autoplay muted loop>
+                </video>
+                <!-- container - Containers are required when using our default grid system. --> 
+                <!-- site - I just gave a random class name to identify it to the css. -->
+                <!-- position-absolute - When position absolute is used on an element, it is positioned absolutely with reference to the closest parent that has a position relative value. -->
+                <!-- top-50 start-50 - It defines the x and y positions of the item. -->
+                <!-- translate-middle - It arranges the item to the middle of the div. -->
+                <!-- text-center - It centeres the text to the middle of the div. -->
+                <!-- text-white - It makes the text white. -->
+                <!-- bg-dark it makes the background of the div dark. -->
+                <!-- bg-opacity-50 - It makes the background opacity 50 percent -->
+                <div class="container site position-absolute top-50 start-50 translate-middle text-center text-white bg-dark bg-opacity-50">
+                    <!-- img src - adds the picture in to the div and with the height we apply the resolution for the image and with the margin-top we scale the margin of the image. -->
                     <img src="./pics/channels4_profile.jpg" class="" alt="Twitter" height="256" style="margin-top: 5%">
+                    <!-- h1 - is the header and the p - is the paragraph --> 
                     <h1>Mouz</h1>
                     <p>The Team!</p>
+                    <!-- btn,btn-danger,btn-lg - with these commands we define a button,
+                        with btn-danger we define the red color to the button,
+                        with the btn-lg we make the button large  -->
+                    <!-- &nbsp - A non-breaking space is a space that will not break into a new line. -->    
                     <button type="button" class="btn btn-danger btn-lg bg-dark" style="margin-top: 2%;  ">&nbsp;&nbsp;&nbsp;&nbsp;Browse&nbsp;&nbsp;&nbsp;&nbsp;</button>
+                    <!-- we add a width 50% and 5% margin from the top to the container. -->   
                     <div class="container" style="width:50%; margin-top: 5%">
+                        <!-- row - the row class is used mainly to hold columns in it,and i gave it a 10% margin from the top. -->   
                         <div class="row" style="margin-top: 10%;">
-                            <div class="col-6 col-sm-3 h-25 d-inline-block">
+                            <!-- col-6 - we use this to define the column size in the extra small column section
+                                 col-sm-3 - we use this to define the column size in the small column section. -->
+                            <div class="col-6 col-sm-3">
+                                <!-- added a Twitter logo. -->
                                 <img src="./pics/twitter.png" class="img-fluid" alt="Twitter" style="margin: 10%">
                             </div>
+                            <!-- added a YouTube logo. -->
                             <div class="col-6 col-sm-3">
                                 <img src="./pics/youtube.png" class="img-fluid" alt="YouTube" style="margin: 10%">
                             </div>
+                            <!-- added a Discord logo. -->
                             <div class="col-6 col-sm-3">
                                 <img src="./pics/discord.png" class="img-fluid" alt="Discord" style="margin: 10%">
                             </div>
+                            <!-- added a Instagram logo. -->
                             <div class="col-6 col-sm-3">
                                 <img src="./pics/insta.png" class="img-fluid" alt="Instagram" style="margin: 10%">
                             </div>
