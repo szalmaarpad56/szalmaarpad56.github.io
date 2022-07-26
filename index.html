@@ -5,7 +5,9 @@
         <!-- This gives the browser instructions on how to control the page's dimensions and scaling.  -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+        <!-- CSS File -->
+        <link rel="stylesheet" href="style.css">
         <!-- The website title -->
         <title>MOUZ</title>
         <!-- This insert's a favicon to the website -->
@@ -18,7 +20,7 @@
             navbar-dark - is to make the navigation bar dark. 
             p-2 = padding,we use this to for spacing,the 2 is the padding level. 
             background-color - makes the navbar black -->
-            <nav class="navbar navbar-expand-lg p-2 navbar-dark" style="background-color: black"> 
+            <nav class="navbar navbar-expand-lg p-3 navbar-dark bg-dark" style="z-index: 999;"> 
                 <!-- container-fluid - class provides a full-width container which spans the entire width of the viewport. --> 
                 <div class="container-fluid">
                     <!-- img src - to insert the logo to the navbar.
@@ -28,7 +30,7 @@
                     <!-- navbar-toggler - for use with our collapse plugin and other navigation toggling behaviors.
                      data-toggle="collapse" - Using that, you can select a class or an id and hook up the element with a particular widget.
                      data-target - we use this to target the data,what will the button do. -->
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
                         <!-- <span class="navbar-toggler-icon"></span> - we use this to insert the navigation bar icon to the navbar using bootstrap -->
                         <span class="navbar-toggler-icon"></span>
                     </button>
@@ -56,9 +58,35 @@
         <!-- creates a box -->
         <section class="box"> 
             <!-- put's a video source on to the website and scales it to 100% and stretches the video to the site with style,and the audio is disabled,the video is looped --> 
-            <video src="./pics/video.mp4" width="100%" height="100%" style="object-fit: none;" autoplay muted loop></video>
+        <!-- creates a box -->
+        <section class="box"> 
+            <!-- put's a video source on to the website and scales it to 100% and stretches the video to the site with style,and the audio is disabled,the video is looped --> 
+            <div class="position-relative"><video src="./pics/video.mp4" width="100%" height="100%" style="object-fit: none;" autoplay muted loop></video>
+                <div class="container sajt position-absolute top-50 start-50 translate-middle text-center text-white bg-dark bg-opacity-50">
+                    <img src="./pics/channels4_profile.jpg" class="" alt="Twitter" height="256" style="margin-top: 5%">
+                    <h1>Mouz!</h1>
+                    <p>The Team!</p>
+                    <button type="button" class="btn btn-danger btn-lg bg-dark" style="margin-top: 2%">Browse</button>
+                    <div class="container" style="width:50%; margin-top: 5%">
+                        <div class="row" style="margin-top: 10%;">
+                            <div class="col-6 col-sm-3 h-25 d-inline-block">
+                                <img src="./pics/twitter.png" class="img-fluid" alt="Twitter" style="margin: 10%">
+                            </div>
+                            <div class="col-6 col-sm-3">
+                                <img src="./pics/youtube.png" class="img-fluid" alt="YouTube" style="margin: 10%">
+                            </div>
+                            <div class="col-6 col-sm-3">
+                                <img src="./pics/discord.png" class="img-fluid" alt="Discord" style="margin: 10%">
+                            </div>
+                            <div class="col-6 col-sm-3">
+                                <img src="./pics/insta.png" class="img-fluid" alt="Instagram" style="margin: 10%">
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+              </div>
         </section>
         <!-- this links the bootstrap script to the html-->
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
     </body>
 </html>
