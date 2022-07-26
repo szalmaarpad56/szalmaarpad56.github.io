@@ -12,3 +12,9 @@
 .col1{
     text-align:left;
 }
+
+.body{ background-color: black;}
+
+html {
+    scroll-behavior: smooth;
+  }

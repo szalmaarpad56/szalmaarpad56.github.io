@@ -80,7 +80,8 @@
                         with btn-danger we define the red color to the button,
                         with the btn-lg we make the button large  -->
                     <!-- &nbsp - A non-breaking space is a space that will not break into a new line. -->    
-                    <button type="button" class="btn btn-danger btn-lg bg-dark" style="margin-top: 2%;  ">&nbsp;&nbsp;&nbsp;&nbsp;Browse&nbsp;&nbsp;&nbsp;&nbsp;</button>
+                    <a href="#scroll-target"><button type="button" class="btn btn-block btn-danger btn-lg bg-dark btn-block" style="margin-top: 2%;  ">&nbsp;&nbsp;&nbsp;&nbsp;Browse&nbsp;&nbsp;&nbsp;&nbsp; </button> </a>
+
                     <!-- we add a width 50% and 5% margin from the top to the container. -->   
                     <div class="container" style="width:50%; margin-top: 5%">
                         <!-- row - the row class is used mainly to hold columns in it,and i gave it a 10% margin from the top. -->   
@@ -108,6 +109,12 @@
                 </div>
               </div>
         </section>
+            <!-- scroll-target - -->
+            <div id="scroll-target" class="container-fluid site position-absolute text-center text-black bg-light">
+                <h1>
+                    About
+                </h1>
+            </div>
         <!-- this links the bootstrap script to the html-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
     </body>
