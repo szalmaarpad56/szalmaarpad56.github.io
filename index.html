@@ -20,7 +20,7 @@
             navbar-dark - is to make the navigation bar dark. 
             p-2 = padding,we use this to for spacing,the 2 is the padding level. 
             background-color - makes the navbar black -->
-            <nav class="navbar navbar-expand-lg p-3 navbar-dark bg-dark" style="z-index: 999;"> 
+            <nav class="navbar navbar-expand-lg p-3 navbar-dark bg-dark fixed-top" style="z-index: 999;"> 
                 <!-- container-fluid - class provides a full-width container which spans the entire width of the viewport. --> 
                 <div class="container-fluid">
                     <!-- img src - to insert the logo to the navbar.
@@ -119,9 +119,10 @@
         </section>
             <!-- scroll-target - -->
             <div id="scroll-target" class="container-fluid site position-absolute text-center text-black bg-light">
-                <h1 class="bg-dark text-white" style="text-decoration:underline;">
+                <h1 class="bg-dark text-white w-auto p-3" style="text-decoration:underline;">
                     About
                 </h1>
+
             </div>
         <!-- this links the bootstrap script to the html-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
