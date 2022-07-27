@@ -20,7 +20,7 @@
             navbar-dark - is to make the navigation bar dark. 
             p-2 = padding,we use this to for spacing,the 2 is the padding level. 
             background-color - makes the navbar black -->
-            <nav class="navbar navbar-expand-lg p-3 navbar-dark bg-dark" style="z-index: 999;"> 
+            <nav class="navbar navbar-expand-lg p-3 navbar-dark bg-dark fixed-top" style="z-index: 999;"> 
                 <!-- container-fluid - class provides a full-width container which spans the entire width of the viewport. --> 
                 <div class="container-fluid">
                     <!-- img src - to insert the logo to the navbar.
@@ -43,8 +43,8 @@
                             <!-- nav-item - is for isert the item to the navigation bar.
                                  nav-link - this will link you to the selected navigation item if you click on it
                                  text-white - is for make the text white on the navigation bar -->
-                            <li class="nav-item"><a href="" class="nav-link text-white">Home</a></li>
-                            <li class="nav-item"><a href="" class="nav-link text-white">About</a></li>
+                            <li class="nav-item"><a href="#top" class="nav-link text-white">Home</a></li>
+                            <li class="nav-item"><a href="#scroll-target" class="nav-link text-white">About</a></li>
                             <li class="nav-item"><a href="" class="nav-link text-white">Crosshair</a></li>
                             <li class="nav-item"><a href="" class="nav-link text-white">Photos</a></li>
                             <li class="nav-item"><a href="" class="nav-link text-white">Sponsors</a></li>
@@ -93,19 +93,27 @@
                                  col-sm-3 - we use this to define the column size in the small column section. -->
                             <div class="col-6 col-sm-3">
                                 <!-- added a Twitter logo. -->
-                                <img src="./pics/twitter.png" class="img-fluid" alt="Twitter" style="margin: 10%">
+                                <a href="https://twitter.com/mousesports" target="_blank">
+                                    <img src="./pics/twitter1.png" class="img-fluid" alt="Twitter" style="margin: 10%">
+                                </a>
                             </div>
                             <!-- added a YouTube logo. -->
                             <div class="col-6 col-sm-3">
-                                <img src="./pics/youtube.png" class="img-fluid" alt="YouTube" style="margin: 10%">
+                                <a href="https://www.youtube.com/c/mousesports" target="_blank">
+                                <img src="./pics/youtube1.png" class="img-fluid" alt="YouTube" style="margin: 10%">
+                                </a>
                             </div>
                             <!-- added a Discord logo. -->
                             <div class="col-6 col-sm-3">
+                                <a href="https://discord.com/invite/mousesports" target="_blank">
                                 <img src="./pics/discord.png" class="img-fluid" alt="Discord" style="margin: 10%">
+                                </a>
                             </div>
                             <!-- added a Instagram logo. -->
                             <div class="col-6 col-sm-3">
+                                <a href="https://www.instagram.com/mousesports/" target="_blank">
                                 <img src="./pics/insta.png" class="img-fluid" alt="Instagram" style="margin: 10%">
+                            </a>
                             </div>
                         </div>
                     </div> 
