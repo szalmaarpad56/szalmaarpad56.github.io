@@ -59,8 +59,11 @@
             <!-- position-relative - meants it's positioned relative to its normal position. --> 
             <div class="position-relative">
                 <!-- put's a video source on to the website and scales it to 100% and stretches the video to the site with style,and the audio is disabled,the video is looped --> 
-                <video src="./pics/video.mp4" width="100%" height="100%"" style="object-fit: cover;" autoplay muted loop>
-                </video>
+                <div class="video-background ">
+                            <video id="bgvid" autoplay loop muted playsinline width="100%" style="object-fit: cover">
+                                <source src="./pics/video.mp4" type="video/mp4">
+                            </video>
+                </div> 
                 <!-- container - Containers are required when using our default grid system. --> 
                 <!-- site - I just gave a random class name to identify it to the css. -->
                 <!-- position-absolute - When position absolute is used on an element, it is positioned absolutely with reference to the closest parent that has a position relative value. -->
