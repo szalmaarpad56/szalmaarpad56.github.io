@@ -20,3 +20,8 @@ body{
 html {
     scroll-behavior: smooth;
   }
+
+.arpi{
+    font-family: 'Impact';
+    font-size: large;
+}
