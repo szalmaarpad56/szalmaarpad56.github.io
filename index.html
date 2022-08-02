@@ -91,6 +91,7 @@
                                  col-sm-3 - we use this to define the column size in the small column section. -->
                             <div class="col-6 col-sm-3">
                                 <!-- added a Twitter logo. -->
+                                <!-- img-fluid - This class tells the browser not to expand the image larger than its original size using a max-width. -->
                                 <a href="https://twitter.com/mousesports" target="_blank">
                                 <img src="./pics/twitter.png" class="img-fluid" alt="Twitter" style="margin: 10%">
                                 </a>
@@ -119,29 +120,46 @@
               </div>
             </section>
             <!-- scroll-target - -->
+            <!-- container-fluid - provides a full-width container which spans the entire width of the viewport. - -->
+            <!-- site-font - I created a class named site font to change the font in the container. -->
+            <!-- padding-left:0; , padding-right:0; - An element's padding area is the space between its content and its border,and I gave 0 padding to the elements from left and right side. -->
                 <div id="scroll-target" class="container-fluid site-font position-absolute text-center text-black" style="padding-left:0; padding-right:0; background-color: #e74c3c;"> 
                 <h1 class="text-white w-auto p-3" style="text-decoration:underline; background-color: black;">
                     About
                 </h1>
+                <!-- created a new container for the cards on the about page -->
                 <div class="container">
+                    <!-- row - the "row" class is used mainly to hold columns in it.  -->
+                    <!-- justify-content-around - defines how the browser distributes space between and around content items along the main-axis of a flex container, and the inline axis of a grid container.-->
                     <div class="row justify-content-around">
+                        <!--created a card with given max-width of 540 pixels. -->
                         <div class="card row" style="max-width: 540px;">
+                            <!-- g-0 - This removes the negative margin s from . row and the horizontal padding from all immediate children columns. -->
                             <div class="row g-0">
+                                <!-- creates a grid with 4 medium columns.  -->
                                 <div class="col-md-4">
-                                    <img src="./pics/torzsi.jpg" class="center img-thumbnail rounded mx-auto d-block" alt="torzsi">
+                                    <!-- creates a grid with 8 medium columns.  -->
+                                    <img src="./pics/torzsi.jpg" class="center img-thumbnail mx-auto d-block" alt="torzsi">
                                 </div>
+                                <!-- thumbnail - is a small image representation of a larger image, usually intended to make it easier and faster to look at or manage a group of larger images. -->
+                                <!-- mx-auto - this class is used for horizontally centering fixed-width block level content. -->
+                                <!-- d-block - simply set's an element's display property to block. -->
                                 <div class="col-md-8">
+                                    <!-- card-body - It add's a padded section within a card. -->
                                     <div class="card-body">
+                                        <!-- card-title - To add a title to the card. -->
                                         <h5 class="card-title" style="font-family:'Impact'; font-size:30px;">Torzsi &nbsp&nbsp <img src="./pics/hu.svg" class="img-fluid" alt="HUN" style="height:18"> </h5>
+                                        <!-- card-text - To add a text to the card. -->
                                         <p class="card-text" style="font-family:'Impact'; font-size:17px;">Ádám "torzsi" Torzsás (born May 17, 2002) is a Hungarian professional Counter-Strike: Global Offensive player who plays for MOUZ as the AWPer.He was unable to attend any Valve-sponsored events due to a VAC ban which occurred on November 10, 2016; following Counter-Strike's "New RMR Eligibility Guidelines" blog post published in April 2021, torzsi's ban expired on the same date in 2021. </p>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                        <!-- col - create a column with auto width. -->
                         <div class="card col" style="max-width: 540px;">
                             <div class="row g-0">
                                 <div class="col-md-4">
-                                    <img src="./pics/jdc.jpg" class="img-thumbnail rounded mx-auto d-block" alt="jdc">
+                                    <img src="./pics/jdc.jpg" class="img-thumbnail mx-auto d-block" alt="jdc">
                                 </div>
                                 <div class="col-md-8">
                                     <div class="card-body">
@@ -159,7 +177,7 @@
                         <div class="card row" style="max-width: 540px;">
                             <div class="row g-0">
                                 <div class="col-md-4">
-                                    <img src="./pics/frozen.jpg" class="center img-thumbnail rounded mx-auto d-block" alt="frozen">
+                                    <img src="./pics/frozen.jpg" class="center img-thumbnail mx-auto d-block" alt="frozen">
                                 </div>
                                 <div class="col-md-8">
                                     <div class="card-body">
@@ -172,7 +190,7 @@
                         <div class="card col" style="max-width: 540px;">
                             <div class="row g-0">
                                 <div class="col-md-4">
-                                    <img src="./pics/dexter.jpg" class="img-thumbnail rounded mx-auto d-block" alt="dexter">
+                                    <img src="./pics/dexter.jpg" class="img-thumbnail mx-auto d-block" alt="dexter">
                                 </div>
                                 <div class="col-md-8">
                                     <div class="card-body">
@@ -252,7 +270,7 @@
                     </h1>
                     <div class="container">
                         <div class="row">
-                            <div class="col-lg-6 col-md-12 md-6 md-lg-0 hover-overlay ripple shadow-1-strong " data-mdb-ripple-color="light">
+                            <div class="col-lg-6 col-md-12 md-6 md-lg-0" data-mdb-ripple-color="light">
                                 <a href="https://about.puma.com/" target="_blank">
                                     <img src="./pics/puma.jpg" class="w-100 rounded" alt="puma">
                                     <div class="mask" style="background-color: rgba(251, 251, 251, 0.2)"></div>
@@ -319,16 +337,19 @@
                                 <div class="text-center text-danger mb-3">Error sending message!</div>
                             </div>
                             <!-- Form submit button -->
+                            <!-- d-grid - it's an effect on Display directly and help you to have Grid Layout.-->
                             <div class="d-grid">
                                 <button class="btn btn-danger btn-lg enabled" id="submitButton" type="submit">Submit</button>
                             </div>
                         </form>
                     </div>
                     <div id="scroll-target4" class="container-fluid site-font position-absolute text-center text-white" style="padding-left:0; padding-right:0; background-color: #e74c3c; font-family:'Impact';font-size:20px"> 
+                        <!-- text-lg-start - makes the text large and brings it to the start of the container. -->
                         <footer class="bg-light text-center text-lg-start">
                             <!-- Copyright -->
                             <div class="text-center p-1" style="background-color:black;">
                                 <div class="container">
+                                    <!-- The d-inline-flex class is used to create an inline flexbox container  -->
                                     <div class="row d-inline-flex" style="width: 15em;">
                                     <div class="col"><a href="https://www.instagram.com/mousesports/" target="_blank">
                                         <img src="./pics/insta.png" class="img-fluid" alt="Instagram">
