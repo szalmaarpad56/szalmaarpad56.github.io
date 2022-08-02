@@ -32,7 +32,7 @@
                     <!-- navbar-toggler - for use with our collapse plugin and other navigation toggling behaviors.
                      data-toggle="collapse" - Using that, you can select a class or an id and hook up the element with a particular widget.
                      data-target - we use this to target the data,what will the button do. -->
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
                         <!-- <span class="navbar-toggler-icon"></span> - we use this to insert the navigation bar icon to the navbar using bootstrap -->
                         <span class="navbar-toggler-icon"></span>
                     </button>
@@ -45,11 +45,11 @@
                             <!-- nav-item - is for isert the item to the navigation bar.
                                  nav-link - this will link you to the selected navigation item if you click on it
                                  text-white - is for make the text white on the navigation bar -->
-                            <li class="nav-item"><a href="#top" class="nav-link text-white">Home</a></li>
-                            <li class="nav-item"><a href="#scroll-target" class="nav-link text-white">About</a></li>
-                            <li class="nav-item"><a href="#scroll-target2" class="nav-link text-white">Photos</a></li>
-                            <li class="nav-item"><a href="#scroll-target3" class="nav-link text-white">Sponsors</a></li>
-                            <li class="nav-item"><a href="#scroll-target4" class="nav-link text-white">Contact Us</a></li>
+                            <li class="nav-item"><a href="#top" class="nav-link text-white js-scroll-trigger">Home</a></li>
+                            <li class="nav-item"><a href="#scroll-target" class="nav-link text-white js-scroll-trigger">About</a></li>
+                            <li class="nav-item"><a href="#scroll-target2" class="nav-link text-white js-scroll-trigger">Photos</a></li>
+                            <li class="nav-item"><a href="#scroll-target3" class="nav-link text-white js-scroll-trigger">Sponsors</a></li>
+                            <li class="nav-item"><a href="#scroll-target4" class="nav-link text-white js-scroll-trigger">Contact Us</a></li>
                         </ul>
                     </div>
                 </div>
@@ -375,5 +375,20 @@
                 </div>
         <!-- this links the bootstrap script to the html-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+        <script type="text/javascript">    
+            $('.js-scroll-trigger').click(function() {
+            $('.navbar-collapse').collapse('hide');
+            });
+
+            $(document).ready(function () { 
+            $(document).click(function () {
+            // if($(".navbar-collapse").hasClass("in")){
+            $('.navbar-collapse').collapse('hide');
+            // }
+            });
+            });
+        </script> 
     </body>
 </html>
