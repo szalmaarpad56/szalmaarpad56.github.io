@@ -21,7 +21,19 @@ html {
     scroll-behavior: smooth;
   }
 
-.arpi{
+.site-font{
     font-family: 'Impact';
     font-size: large;
+}
+
+::-webkit-scrollbar{
+    width: 20px;
+}
+
+::-webkit-scrollbar-track{
+    background: #dddd;
+}
+
+::-webkit-scrollbar-thumb{
+    background: #db1d5c;
 }
